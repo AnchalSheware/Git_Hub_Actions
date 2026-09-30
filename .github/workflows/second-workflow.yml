@@ -1,19 +1,16 @@
-name : Second_workflow ;
-#this is name 
-on : push
-#what event is trigeering
+name: Second_workflow
 
-jobs : 
-       hello-job :
-           runs-on : ubuntu-latest
-           #on which ptalforn it runs
-           steps : 
-             - name : "welcome"
-               run : echo "Hi this Anchal and here we are running github actions"
+on: push
 
-       Bye-job : 
-       runs-on : ubuntu-latest
-       steps :
-         - name :  "Bye Job"
-           run : echo " Nye Bye aapka safar shubh ho"
-    
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        run: echo "Hi this Anchal and here we are running GitHub Actions"
+
+  Bye-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bye Job
+        run: echo "Nye Bye, aapka safar shubh ho"
