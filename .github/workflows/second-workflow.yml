@@ -1,6 +1,7 @@
 name: Second_workflow
 
-on: push
+on: push ;
+    workflow_dispatch
 
 jobs:
   hello-job:
